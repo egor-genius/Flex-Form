@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexForm | Фитнес-клуб</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="index.html" class="header__wrap__logo">
+                    <img src="icons/logo.svg" alt="logo" class="header__wrap__logo__icon">
+                </a>
+                <div class="header__wrap__content">
+                    <ul class="header__wrap__content__nav">
+                        <li class="header__wrap__content__nav__item"><a href="#about-us" class="header__wrap__content__nav__item__link">О нас</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#services" class="header__wrap__content__nav__item__link">Услуги</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#schedule" class="header__wrap__content__nav__item__link">Расписание</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#price" class="header__wrap__content__nav__item__link">Стоимость</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#team" class="header__wrap__content__nav__item__link">Тренеры</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#gallery" class="header__wrap__content__nav__item__link">Галерея</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#faq" class="header__wrap__content__nav__item__link">FAQ</a></li>
+                        <li class="header__wrap__content__nav__item"><a href="#contacts" class="header__wrap__content__nav__item__link">Контакты</a></li>
+                    </ul>
+                    <button class="header__wrap__content__callback" data-modal="callback">Оставить заявку</button>
+                    <div class="header__wrap__content__hamburger">
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                        <span class="header__wrap__content__hamburger__span"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="promo">
+        <div class="container">
+            <div class="promo__wrap">
+                <h1 class="promo__wrap__title">Распахните врата во вселенную фитнеса вместе с <span>Flex&nbsp;Form!</span></h1>
+                <div class="promo__wrap__content">
+                    <p class="promo__wrap__content__description">Присоединяйтесь к нам сегодня и воспользуйтесь нашим эксклюзивным предложением — неделей бесплатных тренировок без обязательств.</p>
+                    <div class="promo__wrap__content__btns">
+                        <button class="promo__wrap__content__btns__booking" data-modal="callback">
+                            Записаться
+                            <img src="icons/arrow.svg" alt="arrow" class="promo__wrap__content__btns__booking__icon">
+                        </button>
+                        <a href="#services" class="promo__wrap__content__btns__services">
+                            <div class="promo__wrap__content__btns__services__contain">
+                                <div class="promo__wrap__content__btns__services__contain__text">Посмотреть услуги</div>
+                                <img src="icons/arrow-white.svg" alt="arrow" class="promo__wrap__content__btns__services__contain__icon">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <img src="images/promo.webp" alt="promo" class="promo__wrap__photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about-us">
+        <div class="container">
+            <div class="about__wrap">
+                <div class="about__wrap__content">
+                    <h2 class="about__wrap__content__title title">О нашем <span>клубе</span></h2>
+                    <p class="about__wrap__content__text">Flex Form — это не просто фитнес-клуб, это место, где здоровый образ жизни становится лёгким и приятным. У нас вы найдёте современные тренировочные зоны, оборудованные по последнему слову техники, а также комфортные зоны отдыха, где можно восстановить силы после тренировки.</p>
+                    <p class="about__wrap__content__text">Наша команда профессионалов всегда готова помочь вам на пути к достижению ваших целей. Мы предлагаем индивидуальные и групповые занятия, программы для новичков и продвинутых спортсменов, а также специальные занятия для тех, кто хочет заниматься в комфортной и спокойной обстановке.</p>
+                </div>
+                <img src="images/about-us.webp" alt="photo" class="about__wrap__photo">
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services__headers">
+                <h2 class="services__headers__title title">Наши <span>программы</span></h2>
+                <div class="services__headers__btns">
+                    <div class="swiper-button-prev1 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon" style="transform: rotate(180deg);">
+                    </div>
+                    <div class="swiper-button-next1 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services__wrap mySwiper">
+            <div class="services__wrap__innner swiper-wrapper">
+                <div class="services__wrap__innner__slide swiper-slide">
+                    <img src="images/service-1.webp" alt="photo" class="services__wrap__innner__slide__photo">
+                    <h3 class="services__wrap__innner__slide__title">Power Conditioning</h3>
+                    <p class="services__wrap__innner__slide__description">Программы силовой подготовки, которые помогают укрепить все группы мышц и повысить общую выносливость.</p>
+                    <button class="services__wrap__innner__slide__btn" data-modal="callback">Записаться</button>
+                </div>
+                <div class="services__wrap__innner__slide swiper-slide">
+                    <img src="images/service-2.webp" alt="photo" class="services__wrap__innner__slide__photo">
+                    <h3 class="services__wrap__innner__slide__title">Flex Flow Yoga</h3>
+                    <p class="services__wrap__innner__slide__description">Уникальные занятия йоги, совмещающие традиционные асаны и современные методики для улучшения гибкости и баланса.</p>
+                    <button class="services__wrap__innner__slide__btn" data-modal="callback">Записаться</button>
+                </div>
+                <div class="services__wrap__innner__slide swiper-slide">
+                    <img src="images/service-3.webp" alt="photo" class="services__wrap__innner__slide__photo">
+                    <h3 class="services__wrap__innner__slide__title">Personal Training</h3>
+                    <p class="services__wrap__innner__slide__description">Индивидуальные тренировки с опытными тренерами, которые составят программу специально для ваших целей и нужд.</p>
+                    <button class="services__wrap__innner__slide__btn" data-modal="callback">Записаться</button>
+                </div>
+                <div class="services__wrap__innner__slide swiper-slide">
+                    <img src="images/service-4.webp" alt="photo" class="services__wrap__innner__slide__photo">
+                    <h3 class="services__wrap__innner__slide__title">Aqua Fitness</h3>
+                    <p class="services__wrap__innner__slide__description">Энергичные тренировки в бассейне, помогающие укрепить мышцы, не создавая излишнего нагрузки на суставы.</p>
+                    <button class="services__wrap__innner__slide__btn" data-modal="callback">Записаться</button>
+                </div>
+                <div class="services__wrap__innner__slide swiper-slide">
+                    <img src="images/service-5.webp" alt="photo" class="services__wrap__innner__slide__photo">
+                    <h3 class="services__wrap__innner__slide__title">Nutrition Consultation</h3>
+                    <p class="services__wrap__innner__slide__description">Консультации с диетологами, которые помогут вам разработать план питания, поддерживающий ваши цели по фитнесу.</p>
+                    <button class="services__wrap__innner__slide__btn" data-modal="callback">Записаться</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="swiper-pagination services__progress"></div>
+        </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="schedule__title title">Расписание <span>тренировок</span></h2>
+            <div class="schedule__wrap">
+                <div class="schedule__wrap__header">
+                    <div class="schedule__wrap__header__time">Время</div>
+                    <div class="schedule__wrap__header__item">ПН</div>
+                    <div class="schedule__wrap__header__item">ВТ</div>
+                    <div class="schedule__wrap__header__item">СР</div>
+                    <div class="schedule__wrap__header__item">ЧТ</div>
+                    <div class="schedule__wrap__header__item">ПТ</div>
+                    <div class="schedule__wrap__header__item">СБ</div>
+                    <div class="schedule__wrap__header__item">ВС</div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">07:00</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Flex Flow Yoga</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Flex Flow Yoga</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Flex Flow Yoga</div>
+                    <div class="schedule__wrap__content__item"></div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">08:00</div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item"></div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">10:00</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Aqua Fitness</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Aqua Fitness</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Aqua Fitness</div>
+                    <div class="schedule__wrap__content__item"></div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">12:00</div>
+                    <div class="schedule__wrap__content__item">Personal Training</div>
+                    <div class="schedule__wrap__content__item">Personal Training</div>
+                    <div class="schedule__wrap__content__item">Personal Training</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Personal Training</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Personal Training</div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">14:00</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Nutrition Consultation</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Nutrition Consultation</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Nutrition Consultation</div>
+                    <div class="schedule__wrap__content__item"></div>
+                </div>
+                <div class="schedule__wrap__content">
+                    <div class="schedule__wrap__content__time">18:00</div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item">Power Conditioning</div>
+                    <div class="schedule__wrap__content__item"></div>
+                    <div class="schedule__wrap__content__item"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="price" id="price">
+        <div class="container">
+            <h2 class="price__title title">Выберите свой <span>фитнес-путь</span></h2>
+            <div class="price__wrap">
+                <div class="price__wrap__item">
+                    <div class="price__wrap__item__content">
+                        <div class="price__wrap__item__content__header">
+                            <h4 class="price__wrap__item__content__header__title">Базовый</h4>
+                            <div class="price__wrap__item__content__header__price">4 000 ₽<span>/ месяц</span></div>
+                        </div>
+                        <div class="price__wrap__item__content__info">
+                            <p class="price__wrap__item__content__info__title">Что входит:</p>
+                            <ul class="price__wrap__item__content__info__list">
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Неделя бесплатных тренировок</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Доступ к тренажерному залу (Strength Training)</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Участие в групповых занятиях по йоге (FlexFlow Yoga)</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Доступ к раздевалкам и душевым</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Бесплатный Wi-Fi на территории клуба</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="price__wrap__item__btn" data-modal="callback">Записаться</button>
+                </div>
+                <div class="price__wrap__item active-price">
+                    <div class="price__wrap__item__active__subtitle">Самый популярный</div>
+                    <div class="active-price__wrap">
+                        <div class="price__wrap__item__active">
+                            <div class="price__wrap__item__active__header">
+                                <h4 class="price__wrap__item__active__header__title">Стандарт</h4>
+                                <div class="price__wrap__item__active__header__price">5 600 ₽<span>/ месяц</span></div>
+                            </div>
+                            <div class="price__wrap__item__active__info">
+                                <p class="price__wrap__item__active__info__title">Что входит:</p>
+                                <ul class="price__wrap__item__active__info__list">
+                                    <li class="price__wrap__item__active__info__list__item">
+                                        <img src="icons/done-dark.svg" alt="done" class="price__wrap__item__active__info__list__item__icon">
+                                        <p class="price__wrap__item__active__info__list__item__text">Все услуги, включенные в «Базовый» тариф</p>
+                                    </li>
+                                    <li class="price__wrap__item__active__info__list__item">
+                                        <img src="icons/done-dark.svg" alt="done" class="price__wrap__item__active__info__list__item__icon">
+                                        <p class="price__wrap__item__active__info__list__item__text">Участие в занятиях по аква-фитнесу (Aqua Fitness)</p>
+                                    </li>
+                                    <li class="price__wrap__item__active__info__list__item">
+                                        <img src="icons/done-dark.svg" alt="done" class="price__wrap__item__active__info__list__item__icon">
+                                        <p class="price__wrap__item__active__info__list__item__text">Одна бесплатная консультация  с диетологом в месяц (Nutrition Consultation)</p>
+                                    </li>
+                                    <li class="price__wrap__item__active__info__list__item">
+                                        <img src="icons/done-dark.svg" alt="done" class="price__wrap__item__active__info__list__item__icon">
+                                        <p class="price__wrap__item__active__info__list__item__text">Доступ к зоне отдыха с бесплатным чаем и водой</p>
+                                    </li>
+                                    <li class="price__wrap__item__active__info__list__item">
+                                        <img src="icons/done-dark.svg" alt="done" class="price__wrap__item__active__info__list__item__icon">
+                                        <p class="price__wrap__item__active__info__list__item__text">Скидка 10% на товары в фитнес-баре</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="price__wrap__item__btn-active" data-modal="callback">Записаться</button>
+                    </div>
+                </div>
+                <div class="price__wrap__item">
+                    <div class="price__wrap__item__content">
+                        <div class="price__wrap__item__content__header">
+                            <h4 class="price__wrap__item__content__header__title">Премиум</h4>
+                            <div class="price__wrap__item__content__header__price">8 000 ₽<span>/ месяц</span></div>
+                        </div>
+                        <div class="price__wrap__item__content__info">
+                            <p class="price__wrap__item__content__info__title">Что входит:</p>
+                            <ul class="price__wrap__item__content__info__list">
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Все услуги, включенные в «Стандарт» тариф</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Два занятия в месяц с персональным тренером (Personal Training)</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Безлимитные консультации с диетологом (Nutrition Consultation)</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Бесплатный доступ к сауне и бассейну после тренировок</p>
+                                </li>
+                                <li class="price__wrap__item__content__info__list__item">
+                                    <img src="icons/done-white.svg" alt="done" class="price__wrap__item__content__info__list__item__icon">
+                                    <p class="price__wrap__item__content__info__list__item__text">Скидка 20% на товары в фитнес-баре и скидка 10% на персональные тренировки</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="price__wrap__item__btn" data-modal="callback">Записаться</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <div class="team__header">
+                <h2 class="team__header__title title">Тренеры, <br class="br-team"> <span>которые заботятся о&nbsp;вас</span></h2>
+                <div class="services__headers__btns">
+                    <div class="swiper-button-prev2 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon" style="transform: rotate(180deg);">
+                    </div>
+                    <div class="swiper-button-next2 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon">
+                    </div>
+                </div>
+            </div>
+            <div class="team__wrap mySwiper2">
+                <div class="team__wrap__inner swiper-wrapper">
+                    <div class="team__wrap__inner__slide swiper-slide">
+                        <img src="images/coach-1.webp" alt="coach" class="team__wrap__inner__slide__photo">
+                        <h4 class="team__wrap__inner__slide__name">Сергей Петров</h4>
+                        <p class="team__wrap__inner__slide__description">Специалист по силовым тренировкам</p>
+                    </div>
+                    <div class="team__wrap__inner__slide swiper-slide">
+                        <img src="images/coach-2.webp" alt="coach" class="team__wrap__inner__slide__photo">
+                        <h4 class="team__wrap__inner__slide__name">Анастасия Иванова</h4>
+                        <p class="team__wrap__inner__slide__description">Инструктор по йоге</p>
+                    </div>
+                    <div class="team__wrap__inner__slide swiper-slide">
+                        <img src="images/coach-3.webp" alt="coach" class="team__wrap__inner__slide__photo">
+                        <h4 class="team__wrap__inner__slide__name">Максим Смирнов</h4>
+                        <p class="team__wrap__inner__slide__description">Персональный тренер</p>
+                    </div>
+                    <div class="team__wrap__inner__slide swiper-slide">
+                        <img src="images/coach-4.webp" alt="coach" class="team__wrap__inner__slide__photo">
+                        <h4 class="team__wrap__inner__slide__name">Ольга Федорова</h4>
+                        <p class="team__wrap__inner__slide__description">Инструктор по аква-фитнесу</p>
+                    </div>
+                    <div class="team__wrap__inner__slide swiper-slide">
+                        <img src="images/coach-5.webp" alt="coach" class="team__wrap__inner__slide__photo">
+                        <h4 class="team__wrap__inner__slide__name">Наталья Волкова</h4>
+                        <p class="team__wrap__inner__slide__description">Диетолог</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="gallery__header">
+                <h2 class="gallery__header__title title">Взгляните внутрь <span>Flex&nbsp;Form</span></h2>
+                <div class="services__headers__btns">
+                    <div class="swiper-button-prev3 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon" style="transform: rotate(180deg);">
+                    </div>
+                    <div class="swiper-button-next3 services__headers__btns__el">
+                        <img src="icons/arrow-white.svg" alt="arrow" class="services__headers__btns__el__icon__icon">
+                    </div>
+                </div>
+            </div>
+            <div class="gallery__wrap mySwiper3">
+                <div class="gallery__wrap__inner swiper-wrapper">
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-1.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-2.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-3.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-4.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-5.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-6.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                    <div class="gallery__wrap__inner__slide swiper-slide">
+                        <img src="images/gallery-7.webp" alt="photo" class="gallery__wrap__inner__slide__photo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="faq__title title">Часто задаваемые <span>вопросы</span></h2>
+            <ul class="faq__wrap">
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Что включено в мой абонемент?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">В зависимости от выбранного тарифа ваш абонемент может включать различные услуги: от базового доступа к тренажёрному залу и групповым занятиям до персональных тренировок и консультаций с диетологом. Детали можно уточнить в разделе «Тарифы и Цены».</p>
+                    </div>
+                </li>
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Есть ли дневные абонементы или гостевые посещения?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">Да, мы предлагаем дневные абонементы для тех, кто хочет попробовать наши услуги перед приобретением месячного абонемента. Кроме того, мы предлагаем гостевые посещения за небольшую плату.</p>
+                    </div>
+                </li>
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Как я могу записаться на занятия с персональным тренером?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">Записаться на занятие с персональным тренером можно через нашу систему онлайн-бронирования на сайте или по телефону.</p>
+                    </div>
+                </li>
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Мне нужно привести свое оборудование для тренировок?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">Нет, все необходимое оборудование предоставляется в клубе. Однако мы рекомендуем привести свой собственный спортивный костюм, обувь и бутылку для воды.</p>
+                    </div>
+                </li>
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Есть ли возрастные ограничения для посещения вашего клуба?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">Да, мы принимаем клиентов старше 18 лет. Также дети в возрасте от 16 до 18 лет могут посещать клуб под присмотром взрослого.</p>
+                    </div>
+                </li>
+                <li class="faq__wrap__item">
+                    <button class="faq__wrap__item__control" aria-expanded="false">
+                        <span class="faq__wrap__item__control__title">Как мне отменить или изменить свой абонемент?</span>
+                        <img src="icons/pluse.svg" alt="icon" class="faq__wrap__item__control__pluse">
+                    </button>
+                    <div class="faq__wrap__item__content" aria-hidden="true">
+                        <p class="faq__wrap__item__content__text">Для отмены или изменения абонемента, пожалуйста, свяжитесь с нашей службой поддержки по электронной почте или по телефону.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="contacts__wrap">
+                <div class="contacts__wrap__content">
+                    <h2 class="contacts__wrap__content__title title">Наши <span>контакты</span></h2>
+                    <div class="contacts__wrap__content__info">
+                        <div class="contacts__wrap__content__info__item">
+                            <div class="contacts__wrap__content__info__item__title">Адрес:</div>
+                            <p class="contacts__wrap__content__info__item__text" style="text-decoration: underline;">г. Москва, Казанская ул., 3 (этаж 4)</p>
+                        </div>
+                        <div class="contacts__wrap__content__info__item">
+                            <div class="contacts__wrap__content__info__item__title">Время работы:</div>
+                            <p class="contacts__wrap__content__info__item__text">06:30–00:00</p>
+                        </div>
+                        <div class="contacts__wrap__content__info__item">
+                            <div class="contacts__wrap__content__info__item__title">Телефон:</div>
+                            <a href="#" class="contacts__wrap__content__info__item__link">+7 (925) 673-55-19</a>
+                        </div>
+                        <div class="contacts__wrap__content__info__item">
+                            <div class="contacts__wrap__content__info__item__title">Почта:</div>
+                            <a href="#" class="contacts__wrap__content__info__item__link">info@flex-form.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts__wrap__content__media">
+                        <a href="#" class="contacts__wrap__content__media__link">
+                            <img src="icons/vk.svg" alt="icon" class="contacts__wrap__content__media__link__icon">
+                        </a>
+                        <a href="#" class="contacts__wrap__content__media__link">
+                            <img src="icons/telegram.svg" alt="icon" class="contacts__wrap__content__media__link__icon">
+                        </a>
+                        <a href="#" class="contacts__wrap__content__media__link">
+                            <img src="icons/whatsapp.svg" alt="icon" class="contacts__wrap__content__media__link__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="contacts__wrap__callback">
+                    <h4 class="contacts__wrap__callback__title">Появились вопросы? <br> Свяжитесь с нами!</h4>
+                    <form action="#" class="contacts__wrap__callback__form">
+                        <input type="text" placeholder="Ваше имя" class="contacts__wrap__callback__form__input">
+                        <input type="email" placeholder="Ваш e-mail" class="contacts__wrap__callback__form__input">
+                        <input type="number" placeholder="Ваш номер телефона" class="contacts__wrap__callback__form__input">
+                        <div class="contacts__wrap__callback__form__checkbox">
+                            <input id="checkbox" name="checkbox" type="checkbox" class="contacts__wrap__callback__form__checkbox__input">
+                            <label for="checkbox" class="contacts__wrap__callback__form__checkbox__label">Согласен на обработку персональных данных</label>
+                        </div>
+                        <button class="contacts__wrap__callback__form__btn">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <a href="index.html" class="footer__wrap__logo">
+                    <img src="icons/logo-footer.svg" alt="logo" class="footer__wrap__logo__icon">
+                </a>
+                <ul class="footer__wrap__list-1">
+                    <li class="footer__wrap__list-1__item">
+                        <a href="#about-us" class="footer__wrap__list-1__item__link">О нас</a>
+                    </li>
+                    <li class="footer__wrap__list-1__item">
+                        <a href="#services" class="footer__wrap__list-1__item__link">Услуги</a>
+                    </li>
+                    <li class="footer__wrap__list-1__item">
+                        <a href="#schedule" class="footer__wrap__list-1__item__link">Расписание</a>
+                    </li>
+                    <li class="footer__wrap__list-1__item">
+                        <a href="#price" class="footer__wrap__list-1__item__link">Стоимость</a>
+                    </li>
+                </ul>
+                <ul class="footer__wrap__list-2">
+                    <li class="footer__wrap__list-2__item">
+                        <a href="#team" class="footer__wrap__list-1__item__link">Тренеры</a>
+                    </li>
+                    <li class="footer__wrap__list-2__item">
+                        <a href="#gallery" class="footer__wrap__list-1__item__link">Галерея</a>
+                    </li>
+                    <li class="footer__wrap__list-2__item">
+                        <a href="#faq" class="footer__wrap__list-1__item__link">FAQ</a>
+                    </li>
+                    <li class="footer__wrap__list-2__item">
+                        <a href="#contacts" class="footer__wrap__list-1__item__link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="footer__wrap__info">
+                    <p class="footer__wrap__info__item">г. Москва, Казанская ул., 3 (этаж 4)</p>
+                    <p class="footer__wrap__info__item">Пн-Вс: 06:30–00:00</p>
+                    <a href="#" class="footer__wrap__info__link">Политика конфиденциальности</a>
+                </div>
+                <div class="footer__wrap__contacts">
+                    <a href="#" class="footer__wrap__contacts__link">+7 (925) 673-55-19</a>
+                    <a href="#" class="footer__wrap__contacts__link">info@flex-form.ru</a>
+                    <div class="footer__wrap__contacts__media">
+                        <a href="#" class="footer__wrap__contacts__media__logo">
+                            <img src="icons/vk.svg" alt="logo" class="footer__wrap__contacts__media__logo__icon">
+                        </a>
+                        <a href="#" class="footer__wrap__contacts__media__logo">
+                            <img src="icons/telegram.svg" alt="logo" class="footer__wrap__contacts__media__logo__icon">
+                        </a>
+                        <a href="#" class="footer__wrap__contacts__media__logo">
+                            <img src="icons/whatsapp.svg" alt="logo" class="footer__wrap__contacts__media__logo__icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__divider"></div>
+            <div class="footer__rights">© Все права защищены «Flex Form», 2009 — 2023</div>
+        </div>
+    </footer>
+
+
+    <div class="bg">
+        <div class="modal">
+            <div class="modal__header">
+                <h5 class="modal__header__title">Оставить <span>заявку</span></h5>
+                <img src="icons/pluse.svg" alt="close" class="modal__header__close">
+            </div>
+            <form action="#" class="modal__form">
+                <input type="text" placeholder="Ваше имя" class="modal__form__input">
+                <input type="e-mail" placeholder="Ваш e-mail" class="modal__form__input">
+                <input type="text" placeholder="Ваше номер телефона" class="modal__form__input">
+                <div class="modal__form__checkbox">
+                    <input id="chechkox-modal" type="checkbox" class="modal__form__checkbox__input">
+                    <label for="chechkox-modal" class="modal__form__checkbox__label">Согласен на обработку персональных данных</label>
+                </div>
+                <button class="modal__form__btn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu__inner">
+            <a href="index.html" class="menu__inner__logo">
+                <img src="icons/logo.svg" alt="logo" class="menu__inner__logo__icon">
+            </a>
+            <ul class="menu__inner__nav">
+                <li class="menu__inner__nav__item"><a href="#about-us" class="menu__inner__nav__item__link">О нас</a></li>
+                <li class="menu__inner__nav__item"><a href="#services" class="menu__inner__nav__item__link">Услуги</a></li>
+                <li class="menu__inner__nav__item"><a href="#schedule" class="menu__inner__nav__item__link">Расписание</a></li>
+                <li class="menu__inner__nav__item"><a href="#price" class="menu__inner__nav__item__link">Стоимость</a></li>
+                <li class="menu__inner__nav__item"><a href="#team" class="menu__inner__nav__item__link">Тренеры</a></li>
+                <li class="menu__inner__nav__item"><a href="#gallery" class="menu__inner__nav__item__link">Галерея</a></li>
+                <li class="menu__inner__nav__item"><a href="#faq" class="menu__inner__nav__item__link">FAQ</a></li>
+                <li class="menu__inner__nav__item"><a href="#contacts" class="menu__inner__nav__item__link">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+    <script src="js/sliders.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        // Modal
+        $(document).ready(function() { 
+
+        $('[data-modal=callback]').on('click', function() {
+            $('.bg').fadeIn();
+        });
+        $('.modal__header__close').on('click', function() {
+            $('.bg').fadeOut();
+        });
+        });
+    </script>
+</body>
+</html>
